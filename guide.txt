@@ -1,1 +1,24 @@
+##DataStructure Collections to 
+-- To Store the data Dynamicly
+--https://www.javatpoint.com/java-concurrenthashmap 
+https://www.geeksforgeeks.org/concurrenthashmap-in-java
+## Taken the logical Implementatio
+--To Knowing and Understanding the Application implementation Idea 
+--https://www.geeksforgeeks.org/find-winner-election-votes-represented-candidate-names/
 
+## Using PostMan Application APIs
+--API Testing and Development:
+API Testing and Development:
+Postman provides a user-friendly interface for sending HTTP requests to APIs, making it easy to test and develop APIs. It supports various HTTP methods such as GET, POST, PUT, DELETE, etc.
+
+--Request Building:
+Users can create requests by specifying the HTTP method, URL, headers, request parameters, and body content. Postman supports different request formats, including JSON and form-data.
+
+--Collections:
+Postman allows users to organize and group related requests into collections. Collections are helpful for managing and executing multiple requests as part of a workflow or testing suite.
+
+--Automated Testing:
+Postman supports the creation of automated test scripts using JavaScript. Test scripts can be associated with requests to perform validations, making it a powerful tool for automated testing of APIs.
+
+--Environment Variables:
+Users can define environment variables in Postman, allowing them to parameterize requests and switch between different environments (e.g., development, staging, production) seamlessly.
