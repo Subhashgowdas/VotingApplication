@@ -1,1 +1,51 @@
+# Voting Application Architecture and Design
+
+## Overview
+
+The Voting Application is a simple Spring Boot project designed for managing votes. It uses a RESTful API to handle various operations related to entering candidates, casting votes, counting votes, listing votes, and determining the winner.
+
+## Key Components
+
+### 1. UserController
+
+The `UserController` is the main controller class responsible for handling HTTP requests related to vote management. It contains the following methods:
+
+- `EnterCandidate`: Adds a candidate to the system with an initial vote count of 0.
+- `CastVote`: Casts a vote for a specified candidate, incrementing their vote count.
+- `CountVote`: Retrieves the current vote count for a specific candidate.
+- `ListVote`: Returns a map of all candidates and their respective vote counts.
+- `GetWinner`: Determines and returns the candidate with the highest vote count.
+
+### 2. ConcurrentHashMap
+
+The application uses a `ConcurrentHashMap` to store candidate names as keys and their corresponding vote counts as values. This provides concurrent access to the data without the need for external synchronization.
+
+### 3. Spring Boot
+
+The project is built using the Spring Boot framework, which simplifies the development of Java applications. It includes features such as auto-configuration, embedded servers, and a wide range of dependencies to enhance development productivity.
+
+## Execution Flow
+
+1. The user sends HTTP requests to the defined endpoints in the `UserController`.
+2. The `UserController` processes these requests, interacts with the `ConcurrentHashMap` to perform operations, and returns appropriate responses.
+3. The application runs on a Spring Boot embedded server, handling multiple requests simultaneously.
+
+## Dependencies
+
+The project relies on the following key dependencies:
+
+- `Spring Boot`: Provides the foundation for building the application.
+- `ConcurrentHashMap`: Facilitates concurrent access to the in-memory data structure.
+- `Spring Web`: Enables the development of web applications.
+
+## Build and Run Instructions
+
+1. Clone the repository: `git clone https://github.com/Subhashgowdas/VotingApplication.git`
+2. Navigate to the project directory: `cd VotingApplication`
+3. Build and run the application: `./mvnw spring-boot:run` (or use your preferred build tool)
+
+## Future Considerations
+
+- The current implementation uses an in-memory data structure for simplicity. If future requirements involve persistent storage, consider integrating a database.
+
 
