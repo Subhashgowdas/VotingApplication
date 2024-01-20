@@ -51,6 +51,3 @@ Welcome to the Voting Application, a simple Spring Boot project for managing vot
 ## Additional Information
 - This project uses Spring Boot.
 - The main logic is implemented in the `UserController` class.
-
-Feel free to explore and contribute to this simple voting system!
-
